@@ -10,9 +10,36 @@ body {
   text-align: left;
 }
 
-header {
+#nav {
   height: 90px;
+  background: white;
   border-bottom: 1px solid #e2dbd3;
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+
+#boss {
+  padding-top: 32px;
+}
+
+#nav.shrink {
+  height: 60px;
+  background: rgba(0, 0, 0, 0.9);
+  transition: all ease .5s;
+}
+
+#nav.shrink #boss {
+  padding-top: 17px;
+}
+
+#menu-icon {
+	background: url(img/icon.png) center;
+	width: 40px;
+	height: 34px;
+	display: hidden;
 }
 
 a {
@@ -32,13 +59,11 @@ a:hover {
 .logo {
   height: 20px;
   width: 154px;
-  padding-top: 32px;
   float: left;
 }
 
 nav {
   float: right;
-  padding-top: 38px;
 }
 
 nav a {
@@ -59,6 +84,7 @@ nav a:hover, .current  {
 .slider {
   height: 660px;
   background: #e2dbd3;
+  padding-top: 90px;
 }
 
 .initials {
@@ -265,4 +291,26 @@ nav a:hover, .current  {
 footer {
   background: #e2dbd3;
   padding: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+	#menu-icon {
+		display: inline-block;
+	}
+	nav:hover ul {
+		display: block;
+	}
+	nav a:active {
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		background: #405580;
+		width: 50%;
+		padding: 20px;
+		right: 20px;
+		top: 60px;
+		border: 1px solid #fff;
+		border-radius: 4px 0 4px 4px;
+	}
 }
