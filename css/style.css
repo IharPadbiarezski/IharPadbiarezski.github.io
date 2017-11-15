@@ -75,12 +75,17 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover, .current  {
+nav a:hover {
   background-color: #6dbacd;
   border-radius: 7px;
   color: white;
 }
 
+.active {
+  background-color: #4ab1ca;
+  border-radius: 7px;
+  color: white;
+}
 .slider {
   height: 660px;
   background: #e2dbd3;
@@ -272,7 +277,7 @@ nav a:hover, .current  {
 /*Start contact*/
 
 #contact {
-  padding: 70px 0;
+  padding: 250px 0;
 }
 
 .contact {
