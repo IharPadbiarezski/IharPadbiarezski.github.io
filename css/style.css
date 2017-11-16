@@ -35,16 +35,29 @@ body {
   padding-top: 17px;
 }
 
+label {
+    font-size: 18px;
+    display: none;
+    width: 26px;
+    float: right;
+    padding-bottom: 2px;
+}
+#toggle {
+    display: none;
+}
+
+
 #menu-icon {
-	background: url(img/icon.png) center;
-	width: 40px;
-	height: 34px;
-	display: hidden;
+  float: right;
+  margin-right: 10px;
+  display: none;
 }
 
 a {
   text-decoration: none;
   color: #515769;
+  user-select: none;
+  cursor: default;
 }
 
 a:hover {
@@ -277,7 +290,7 @@ nav a:hover {
 /*Start contact*/
 
 #contact {
-  padding: 250px 0;
+  padding: 300px 0;
 }
 
 .contact {
@@ -300,22 +313,91 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-	#menu-icon {
-		display: inline-block;
-	}
-	nav:hover ul {
-		display: block;
-	}
-	nav a:active {
-		display: none;
-		z-index: 1000;
-		position: absolute;
-		background: #405580;
-		width: 50%;
-		padding: 20px;
-		right: 20px;
-		top: 60px;
-		border: 1px solid #fff;
-		border-radius: 4px 0 4px 4px;
-	}
+
+.container{
+  margin: 0 10px;
+}
+
+/* navigation */
+
+label {
+       display: block;
+       cursor: pointer;
+   }
+   .menu {
+       text-align: center;
+       width: 100%;
+       display: none;
+   }
+   .menu a {
+       display: block;
+       border-bottom: 1px solid #EAEAEB;
+       margin: 0;
+
+   }
+   #toggle:checked + .menu {
+       display: block;
+   }
+
+/* Slider */
+
+   .slider {
+     height: 445px;
+   }
+
+   .initials {
+     padding-top: 110px;
+   }
+
+   .avatar {
+     width: 450px;
+   }
+
+/* about
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.picradius {
+  width: 344px;
+  height: 480px;
+}
+
+
+
+.description p {
+  width: 400px;
+  padding-bottom: 30px;
+}
+
+.description a {
+  background: #e2dbd3;
+  padding: 10px 15px;
+  color: #515769;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.description a:hover {
+  background: #6dbacd;
+  color: white;
+}
+*/
+
+@media screen and (max-width: 425px) {
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+
 }
