@@ -65,7 +65,7 @@ a:hover {
 }
 
 .container {
-  max-width: 1140px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -162,13 +162,14 @@ nav a:hover {
 .content {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .picradius {
   border-radius: 40px;
+  width: 45%;
+  height: 45%;
 }
 
 .description {
@@ -177,6 +178,7 @@ nav a:hover {
 
 .description p {
   padding-bottom: 30px;
+  font-weight: normal;
 }
 
 .description a {
@@ -251,6 +253,7 @@ nav a:hover {
 .description li {
   list-style-position: inside;
   margin-left: 20px;
+  font-weight: normal;
 }
 
 /*Start Hobby*/
@@ -311,12 +314,27 @@ footer {
   padding: 40px 0;
 }
 
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 1160px) {
 
-
-.container{
-  margin: 0 10px;
+.initials h1 {
+  font-size: 2.0em;
 }
+
+.initials p {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #a6a7aa;
+  line-height: 1.4;
+}
+
+.social i {
+  font-size: 125%;
+}
+
+}
+
+
+@media screen and (max-width: 1000px) {
 
 /* navigation */
 
@@ -338,8 +356,9 @@ label {
    #toggle:checked + .menu {
        display: block;
    }
+ }
 
-/* Slider */
+   @media screen and (max-width: 1000px) {
 
    .slider {
      height: 445px;
@@ -353,51 +372,62 @@ label {
      width: 450px;
    }
 
-/* about
+   }
 
-.content {
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-}
+   @media screen and (max-width: 740px) {
 
-.picradius {
-  width: 344px;
-  height: 480px;
-}
+   .slider {
+     height: 658px;
+   }
 
+   .initials {
+     padding-top: 50px;
+   }
 
+   .avatar {
+     width: 450px;
+   }
 
-.description p {
-  width: 400px;
-  padding-bottom: 30px;
-}
+   #contact {
+     padding: 150px 0;
+   }
 
-.description a {
-  background: #e2dbd3;
-  padding: 10px 15px;
-  color: #515769;
-  text-decoration: none;
-  border-radius: 5px;
-}
+   .contact {
+     flex-direction: column;
+   }
 
-.description a:hover {
-  background: #6dbacd;
-  color: white;
-}
-*/
+   }
+
+   @media screen and (max-width: 500px) {
+
+   .slider {
+     height: 497px;
+   }
+
+   .avatar {
+     width: 276px;
+     margin-top: 10px;
+   }
+   }
 
 @media screen and (max-width: 425px) {
 
+  .content {
+    flex-direction: column;
+  }
 
+  .picradius {
+    width: 100%;
+    height: 100%;
+  }
+
+  .description {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+#educ {
+  margin-top: 40px;
 }
-
-@media screen and (max-width: 375px) {
-
-
-}
-
-@media screen and (max-width: 320px) {
-
 
 }
