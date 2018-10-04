@@ -168,7 +168,7 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-.picradius {
+.picture-radius {
   border-radius: 40px;
   width: 45%;
   height: 45%;
@@ -202,7 +202,7 @@ nav a:hover {
   padding: 70px 0;
 }
 
-.title {
+.text-center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -433,7 +433,7 @@ nav a:hover {
   background: #fafafa;
 }
 
-.title li {
+.text-center li {
   float: left;
   padding: 0 20px;
   list-style-type: none;
@@ -441,11 +441,11 @@ nav a:hover {
   margin-top: 15px;
 }
 
-.title li:last-child {
+.text-center li:last-child {
   border-right: none;
 }
 
-.block-3 {
+.block-flex {
   display: flex;
   flex-direction: column;
 }
@@ -474,7 +474,7 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-.cont {
+.contact-container {
   width: 300px;
   text-align: center;
 }
@@ -504,11 +504,15 @@ footer {
   label {
     display: block;
     cursor: pointer;
+    user-select: none;
   }
   .menu {
     text-align: center;
     width: 100%;
     display: none;
+  }
+  #menu-center {
+    background: #000;
   }
   .menu a {
     display: block;
@@ -567,7 +571,7 @@ footer {
   .content {
     flex-direction: column;
   }
-  .picradius {
+  .picture-radius {
     width: 100%;
     height: 100%;
   }
