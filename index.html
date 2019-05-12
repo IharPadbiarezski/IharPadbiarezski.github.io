@@ -21,22 +21,22 @@
 
 <body>
   <!-- Start Header-->
-  <header id="nav">
-    <div class="container" id="boss">
+  <header class="header" id="nav">
+    <div class="container header-padding">
       <a class="logo" href="index.html">
         <img src="img/logo.png" alt="logo" height="20" width="154">
       </a>
       <label for="toggle"><strong>&#9776;<strong></label>
       <input type="checkbox" id="toggle" />
       <div class="menu">
-        <nav id="menu-center">
-          <a class="active" href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#hobby">Hobby</a>
-          <a href="#contact">Contact</a>
+        <nav class="navigation" id="menu-center">
+          <a class="navigation__link active" href="#home">Home</a>
+          <a class="navigation__link" href="#about">About</a>
+          <a class="navigation__link" href="#skills">Skills</a>
+          <a class="navigation__link" href="#experience">Experience</a>
+          <a class="navigation__link" href="#education">Education</a>
+          <a class="navigation__link" href="#hobby">Hobby</a>
+          <a class="navigation__link" href="#contact">Contact</a>
         </nav>
       </div>
     </div>
@@ -48,13 +48,13 @@
     <div id="home" class="slider">
       <div class="container">
         <div class="initials">
-          <h1 class="animated bounce">Ihar <br/> Padbiarezski</h1>
-          <p class="animated slideInRight">Front-end Developer</p>
+          <h1 class="initials__name animated bounce">Ihar <br/> Padbiarezski</h1>
+          <p class="initials__position animated slideInRight">Front-end Developer</p>
           <ul class="social animated pulse">
-            <li><a href="https://www.linkedin.com/in/ihar-padbiarezski-6435a7152/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.facebook.com/igor.podberezski" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://github.com/IharPadbiarezski" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://vk.com/igor.podberezsky" target="_blank"><i class="fa fa-vk"></i></a></li>
+            <li class="social__link"><a href="https://www.linkedin.com/in/ihar-padbiarezski-6435a7152/" target="_blank"><i class="social__icon fa fa-linkedin"></i></a></li>
+            <li class="social__link"><a href="https://www.facebook.com/igor.podberezski" target="_blank"><i class="social__icon fa fa-facebook"></i></a></li>
+            <li class="social__link"><a href="https://github.com/IharPadbiarezski" target="_blank"><i class="social__icon fa fa-github"></i></a></li>
+            <li class="social__link"><a href="https://vk.com/igor.podberezsky" target="_blank"><i class="social__icon fa fa-vk"></i></a></li>
           </ul>
         </div>
         <img class="avatar" src="img/avatar.png" alt="Avatar">
@@ -66,253 +66,213 @@
     <section class="staggered-animation-container">
 
       <!--Start About-->
-      <div id="about">
+      <div id="about" class="about">
         <div class="container content">
           <img class="picture-radius os-animation" data-os-animation="zoomInDown" data-os-animation-delay=".1s" src="img/img1.jpg" width="460" height="640" alt="Image">
-          <div class="description os-animation" data-os-animation="bounceInRight" data-os-animation-delay=".6s">
-            <h2>About Me</h2>
-            <p>I'm Ihar Padbiarezski, a Junior Front-end Developer.<br/> I am a hard working, motivated, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able
-              to work independently in busy environments and also within a team setting. I am outgoing and tactful, and able to listen effectively when solving problems.</p>
-            <a href="https://drive.google.com/open?id=1rQovuhZbs0OJ2QSv5533qGVnA_4OdcxhigPziBm5fIk">Download my CV</a>
+          <div class="about-description os-animation" data-os-animation="bounceInRight" data-os-animation-delay=".6s">
+            <h2 class="about__title">About Me</h2>
+            <p class="about__description">From the moment I produced “Hello World!” in the console of my first application, I knew I was hooked into the world of software development. But software development has never been “just a job” for me, it’s offered an engaging challenge to continually learn and improve my skills in creating high-quality software. What started with a simple “Hello World” has become a full-fledged passion that only gets more exciting as the years go by.</p>
+            <p class="about__description">I am a hard working, motivated, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able
+            to work independently in busy environments and also within a team setting. I am outgoing and tactful, and able to listen effectively when solving problems.</p>
+            <a class="about__link" href="https://drive.google.com/open?id=1rQovuhZbs0OJ2QSv5533qGVnA_4OdcxhigPziBm5fIk" target="_blank">Download my CV</a>
           </div>
         </div>
       </div>
       <!-- End About -->
 
       <!--Start Skills-->
-      <div id="skills">
+      <div id="skills" class="skills">
         <div class="container blockarea">
           <h2 class="text-center">Skills</h2>
           <p class="text-center">"Knowledge is not skill. Knowledge plus ten thousand times is skill."<br /><span>- Shinichi Suzuki<span></p>
-          <div class="content-1">
-            <div class="side-1">
-              <img class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".2s" src="img/skill1.png" alt="Image" width="100" height="100">
-              <img class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".4s" src="img/skill2.png" alt="Image" width="100" height="100">
-              <img class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".6s" src="img/skill3.png" alt="Image" width="100" height="100">
-              <img class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".8s" src="img/skill4.png" alt="Image" width="100" height="100">
+          <div class="skills-content">
+            <div class="skills-images">
+              <img class="skills__image os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".2s" src="img/skill1.png" alt="Image" width="100" height="100">
+              <img class="skills__image os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".4s" src="img/skill2.png" alt="Image" width="100" height="100">
+              <img class="skills__image os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".6s" src="img/skill3.png" alt="Image" width="100" height="100">
+              <img class="skills__image os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".8s" src="img/skill4.png" alt="Image" width="100" height="100">
             </div>
-            <div class="progressBlock">
-              <div class="progressBar">
-                <div class="title1 htmlColor">HTML5</div>
+            <div class="progress-block">
+              <div class="progress-bar">
+                <div class="progress__title htmlColor">HTML5</div>
                 <div class="progress html"></div>
-                <div class="progress_value">90%</div>
+                <div class="progress__value">90%</div>
               </div>
-              <div class="progressBar">
-                <div class="title1 cssColor">CSS3</div>
+              <div class="progress-bar">
+                <div class="progress__title cssColor">CSS3</div>
                 <div class="progress css"></div>
-                <div class="progress_value">90%</div>
+                <div class="progress__value">90%</div>
               </div>
-              <div class="progressBar">
-                <div class="title1 jsColor">JavaScript</div>
+              <div class="progress-bar">
+                <div class="progress__title jsColor">JavaScript</div>
                 <div class="progress js"></div>
-                <div class="progress_value">40%</div>
+                <div class="progress__value">80%</div>
               </div>
-              <div class="progressBar">
-                <div class="title1 jQueryColor">jQuery</div>
+              <div class="progress-bar">
+                <div class="progress__title jQueryColor">jQuery</div>
                 <div class="progress jQuery"></div>
-                <div class="progress_value">50%</div>
+                <div class="progress__value">60%</div>
               </div>
-              <div class="progressBar">
-                <div class="title1 sassColor">SASS</div>
+              <div class="progress-bar">
+                <div class="progress__title sassColor">SASS</div>
                 <div class="progress sass"></div>
-                <div class="progress_value">60%</div>
+                <div class="progress__value">70%</div>
               </div>
-              <div class="progressBar">
-                <div class="title1 bootColor">Bootstrap</div>
+              <div class="progress-bar">
+                <div class="progress__title bootColor">Bootstrap</div>
                 <div class="progress boot"></div>
-                <div class="progress_value">65%</div>
+                <div class="progress__value">70%</div>
               </div>
-              <div class="progressBar">
-                <div class="title1 gitColor">Git</div>
+              <div class="progress-bar">
+                <div class="progress__title gitColor">Git</div>
                 <div class="progress git"></div>
-                <div class="progress_value">75%</div>
+                <div class="progress__value">75%</div>
               </div>
-              <div class="progressBar">
-                <div class="title1 psColor">Photoshop</div>
+              <div class="progress-bar">
+                <div class="progress__title psColor">Photoshop</div>
                 <div class="progress ps"></div>
-                <div class="progress_value">75%</div>
+                <div class="progress__value">75%</div>
               </div>
             </div>
-            <div class="side-1">
-              <img class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay=".2s" src="img/skill5.png" alt="Image" width="100" height="100">
-              <img class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay=".4s" src="img/skill6.png" alt="Image" width="100" height="100">
-              <img class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay=".6s" src="img/skill7.png" alt="Image" width="100" height="100">
-              <img class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay=".8s" src="img/skill8.png" alt="Image" width="100" height="100">
+            <div class="skills-images">
+              <img class="skills__image os-animation" data-os-animation="fadeInRight" data-os-animation-delay=".2s" src="img/skill5.png" alt="Image" width="100" height="100">
+              <img class="skills__image os-animation" data-os-animation="fadeInRight" data-os-animation-delay=".4s" src="img/skill6.png" alt="Image" width="100" height="100">
+              <img class="skills__image os-animation" data-os-animation="fadeInRight" data-os-animation-delay=".6s" src="img/skill7.png" alt="Image" width="100" height="100">
+              <img class="skills__image os-animation" data-os-animation="fadeInRight" data-os-animation-delay=".8s" src="img/skill8.png" alt="Image" width="100" height="100">
             </div>
-
           </div>
-          <h2 class="text-center">Portfolio</h2>
-          <p class="text-center"><em>- I'm so proud of this website-portfolio. The best things was made with love and soul.</em><br></p>
-          <div class="content-2">
-            <div class="portfolio-item">
-              <a href="portfolio/travel/" target="_blank">
-          <img src="img/port1.jpg" alt="Image" width="250" height="250">
-          <span><img src="img/loupe.png"></span>
-            </a>
         </div>
-        <div class="portfolio-item">
-          <a href="portfolio/german/" target="_blank">
-          <img src="img/port2.jpg" alt="Image" width="250" height="250">
-          <span><img src="img/loupe.png"></span>
-        </a>
-
-        </div>
-        <div class="portfolio-item">
-          <a href="portfolio/device/" target="_blank">
-          <img src="img/port3.jpg" alt="Image" width="250" height="250">
-          <span><img src="img/loupe.png"></span>
-        </a>
-        </div>
-        <div class="portfolio-item">
-          <a href="portfolio/grid/" target="_blank">
-          <img src="img/port4.jpg" alt="Image" width="250" height="250">
-          <span><img src="img/loupe.png"></span>
-        </a>
-        </div>
-        <div class="portfolio-item">
-          <a href="portfolio/position-and-floats/" target="_blank">
-          <img src="img/port5.jpg" alt="Image" width="250" height="250">
-          <span><img src="img/loupe.png"></span>
-        </a>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fiharpadbiarezski.github.io%2Ffrontend-nanodegree-mobile-portfolio%2F&tab=mobile" target="_blank">
-              <img src="img/port6.jpg" alt="Image" width="250" height="250">
-              <span><img src="img/loupe.png"></span>
-            </a>
-        </div>
-        <div class="portfolio-item">
-          <a href=" https://iharpadbiarezski.github.io/CSS-Recipes-and-Layouts/" target="_blank">
-              <img src="img/port7.jpg" alt="Image" width="250" height="250">
-              <span><img src="img/loupe.png"></span>
-            </a>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://iharpadbiarezski.github.io/TestProject-2/" target="_blank">
-              <img src="img/port8.jpg" alt="Image" width="250" height="250">
-              <span><img src="img/loupe.png"></span>
-            </a>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://iharpadbiarezski.github.io/TestProject/" target="_blank">
-              <img src="img/port9.jpg" alt="Image" width="250" height="250">
-              <span><img src="img/loupe.png"></span>
-            </a>
-        </div>
-		<div class="portfolio-item">
-          <a href="https://iharpadbiarezski.github.io/TestProject-3/" target="_blank">
-              <img src="img/port10.jpg" alt="Image" width="250" height="250">
-              <span><img src="img/loupe.png"></span>
-            </a>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://iharpadbiarezski.github.io/markup/" target="_blank">
-              <img src="img/port11.jpg" alt="Image" width="250" height="250">
-              <span><img src="img/loupe.png"></span>
-            </a>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://iharpadbiarezski.github.io/css-layouts/" target="_blank">
-              <img src="img/port12.jpg" alt="Image" width="250" height="250">
-              <span><img src="img/loupe.png"></span>
-            </a>
-        </div>
-        <div class="portfolio-item">
-          <a href="#contact">
-          <img src="img/last.jpg" alt="Image" width="250" height="250">
-          <span><img src="img/loupe.png"></span>
-        </a>
-        </div>
-      </div>
-      </div>
       </div>
       <!-- End Skills -->
 
-      <!--Start Education-->
-      <div id="education">
-        <div class="container content">
-          <div class="description os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".1s">
-            <h2>Education</h2>
-            <p>Belarusian National Technical University - Minsk, Belarus / <strong><em>2015</em></strong><br/> Specialist (Bachelor Degree) – Metal-cutting Machines And Tools
-            </p>
-            <p>5 years of studying at Belarusion National Technical University. It is a nice education school to get a hight quality education.</p>
-            <p>Do you want to get more information of BNTY, just click the button bellow.</p>
-            <a href="https://en.bntu.by/">BNTU</a>
-          </div>
-          <img id="educ" class="picture-radius os-animation" data-os-animation="zoomInRight" data-os-animation-delay=".3s" src="img/img2.jpg" alt="Image">
-        </div>
-      </div>
-      <!-- End Education -->
-
       <!--Start Experience-->
-      <div id="experience">
-        <div class="container content">
-          <img class="picture-radius os-animation" data-os-animation="zoomInLeft" data-os-animation-delay=".6s" src="img/img3.jpg" alt="Image" width="460" height="346">
-          <div class="description os-animation" data-os-animation="lightSpeedIn" data-os-animation-delay=".1s">
-            <h2>Work Experience</h2>
-            <p>Open Join Stock Company “NPO Center” – Minsk, Belarus / <strong><em>08.2015 – 09.2017</em></strong>
-              <br /><strong>Position:</strong> Design Engineer<br/><br/> “NPO Center” provides complete solution for the processing of various types of mineral materials at special prices.
-              <ul>
-                <strong>Responsibilities included:</strong>
-                <li>make design of crushes, cyclones, conveyors</li>
-                <li>writing technical documentation</li>
-                <li>modification of technical documentation</li>
-                <li>follow the progress of work in production</li>
-                <li>technical discussion</li>
-              </ul>
-              <p>Do you want get more information of "NPO Centre", just click the button bellow.</p>
-              <a href="http://www.npo-center.com/en/">NPO Center</a>
+      <div id="experience" class="container">
+        <h2 class="experience-title">Experience</h2>
+        <p class="experience-quote text-center"><em>- I'm so proud of this website-portfolio. The best things was made with love and soul.</em><br></p>
+        <div class="experience-projects">
+          <div class="experience-item project">
+            <a class="experience__link" href="http://bit.ly/2VwFCfH" target="_blank">
+              <img class="experience__image" src="img/port1.jpg" alt="Image" width="250" height="250">
+              <span><img src="img/loupe.png"></span>
+            </a>
+            <h4 class="experience__name project__name">Events in Your City</h4>
+        </div>
+          <div class="experience-item project">
+            <a class="experience__link" href="http://bit.ly/30c9RXF" target="_blank">
+              <img class="experience__image" src="img/port2.jpg" alt="Image" width="250" height="250">
+              <span><img src="img/loupe.png"></span>
+            </a>
+            <h4 class="experience__name project__name">Weekly Budget App</h4>
+          </div>
+          <div class="experience-item project">
+            <a class="experience__link" href="http://bit.ly/2vOoAKr" target="_blank">
+              <img class="experience__image" src="img/port3.jpg" alt="Image" width="250" height="250">
+              <span><img src="img/loupe.png"></span>
+            </a>
+            <h4 class="experience__name project__name">Car Insurance Quotation</h4>
+          </div>
+          <div class="experience-item project">
+            <a class="experience__link" href="http://bit.ly/30aRJxm" target="_blank">
+              <img class="experience__image" src="img/port4.jpg" alt="Image" width="250" height="250">
+              <span><img src="img/loupe.png"></span>
+            </a>
+            <h4 class="experience__name project__name">Simulate Email</h4>
+          </div>
+          <div class="experience-item project">
+            <a class="experience__link" href="http://bit.ly/2H52bxG" target="_blank">
+              <img class="experience__image" src="img/port5.jpg" alt="Image" width="250" height="250">
+              <span><img src="img/loupe.png"></span>
+            </a>
+            <h4 class="experience__name project__name">Shopping Cart</h4>
+          </div>
+          <div class="experience-item project">
+            <a class="experience__link" href="http://bit.ly/2Yje1eQ" target="_blank">
+              <img class="experience__image" src="img/port6.jpg" alt="Image" width="250" height="250">
+              <span><img src="img/loupe.png"></span>
+            </a>
+            <h4 class="experience__name project__name">Racon CSS Layout</h4>
+          </div>
+          <div class="experience-item project">
+            <a class="experience__link" href="http://bit.ly/2HeO89b" target="_blank">
+              <img class="experience__image" src="img/port7.jpg" alt="Image" width="250" height="250">
+              <span><img src="img/loupe.png"></span>
+            </a>
+            <h4 class="experience__name project__name">Lamba Markup</h4>
+          </div>
+          <div class="experience-item project">
+            <a  class="experience__link" href="#contact">
+              <img class="experience__image" src="img/last.jpg" alt="Image" width="250" height="250">
+              <span><img src="img/loupe.png"></span>
+            </a>
+            <h4 class="experience__name project__name">Next Project</h4>
           </div>
         </div>
       </div>
       <!-- End Experience -->
 
+
+      <!--Start Education-->
+      <div class="education" id="education">
+        <div class="container content">
+          <div class="education-description os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".1s">
+            <h2 class="education__title">Education</h2>
+            <p class="education__description">Belarusian National Technical University - Minsk, Belarus / <strong><em>2015</em></strong><br/> Specialist (Bachelor Degree) – Metal-cutting Machines And Tools
+            </p>
+            <p class="education__description">5 years of studying at Belarusion National Technical University. It is a nice education school to get a hight quality education.</p>
+            <p class="education__description">Do you want to get more information of BNTY, just click the button bellow.</p>
+            <a class="education__link" href="https://en.bntu.by/">BNTU</a>
+          </div>
+          <img class="education__image picture-radius os-animation" data-os-animation="zoomInRight" data-os-animation-delay=".3s" src="img/img2.jpg" alt="Image">
+        </div>
+      </div>
+      <!-- End Education -->
+
       <!--Start Hobby-->
-      <div id="hobby">
+      <div class="hobby" id="hobby">
         <div class="container block-flex">
-          <div class="text-center">
-            <h2>Hobby</h2>
-            <ul>
-              <li>English</li>
-              <li>Spanish</li>
-              <li>Drawing</li>
-              <li>Guitar</li>
-              <li>Youtube Channel</li>
-              <li>Table Tennis</li>
-              <li>Workout</li>
-              <li>Juggling</li>
-              <li>Yoga</li>
+          <div class="hobby-head text-center">
+            <h2 class="hobby__title">Hobby</h2>
+            <ul class="hobby-list">
+              <li class="hobby__item">English</li>
+              <li class="hobby__item">Spanish</li>
+              <li class="hobby__item">Drawing</li>
+              <li class="hobby__item">Guitar</li>
+              <li class="hobby__item">Youtube Channel</li>
+              <li class="hobby__item">Table Tennis</li>
+              <li class="hobby__item">Workout</li>
+              <li class="hobby__item">Juggling</li>
+              <li class="hobby__item">Yoga</li>
             </ul>
           </div>
-          <div class="content-3">
-            <img class="os-animation" data-os-animation="zoomIn" data-os-animation-delay=".1s" src="img/hobby1.jpg" alt="Image">
-            <img class="os-animation" data-os-animation="zoomIn" data-os-animation-delay=".18s" src="img/hobby2.jpg" alt="Image">
-            <img class="os-animation" data-os-animation="zoomIn" data-os-animation-delay=".12s" src="img/hobby3.jpg" alt="Image">
-            <img class="os-animation" data-os-animation="zoomIn" data-os-animation-delay=".9s" src="img/hobby4.jpg" alt="Image">
-            <img class="os-animation" data-os-animation="zoomIn" data-os-animation-delay=".6s" src="img/hobby5.jpg" alt="Image">
-            <img class="os-animation" data-os-animation="zoomIn" data-os-animation-delay=".15s" src="img/hobby6.jpg" alt="Image">
-            <img class="os-animation" data-os-animation="zoomIn" data-os-animation-delay=".3s" src="img/hobby7.jpg" alt="Image">
+          <div class="hobby-images">
+            <img class="hobby__image os-animation" data-os-animation="zoomIn" data-os-animation-delay=".1s" src="img/hobby1.jpg" alt="Image">
+            <img class="hobby__image os-animation" data-os-animation="zoomIn" data-os-animation-delay=".18s" src="img/hobby2.jpg" alt="Image">
+            <img class="hobby__image os-animation" data-os-animation="zoomIn" data-os-animation-delay=".12s" src="img/hobby3.jpg" alt="Image">
+            <img class="hobby__image os-animation" data-os-animation="zoomIn" data-os-animation-delay=".9s" src="img/hobby4.jpg" alt="Image">
+            <img class="hobby__image os-animation" data-os-animation="zoomIn" data-os-animation-delay=".6s" src="img/hobby5.jpg" alt="Image">
+            <img class="hobby__image os-animation" data-os-animation="zoomIn" data-os-animation-delay=".15s" src="img/hobby6.jpg" alt="Image">
+            <img class="hobby__image os-animation" data-os-animation="zoomIn" data-os-animation-delay=".3s" src="img/hobby7.jpg" alt="Image">
           </div>
         </div>
       </div>
       <!-- End hobby -->
 
       <!--Contact-->
-      <div id="contact">
+      <div class="contact" id="contact">
         <div class="container block-flex">
           <div class="text-center">
-            <h2>Contact Me</h2>
-            <h4>Feel Free to Contact Me! :)</h4>
+            <h2 class="contact__title">Contact Me</h2>
+            <h4  class="contact__offer">Feel Free to Contact Me! :)</h4>
           </div>
-          <div class="contact">
+          <div class="contact-area">
 
             <!-- Start Animation -->
             <section class="os-animation" data-os-animation="fadeInLeftBig" data-os-animation-delay=".1s">
 
               <div class="contact-container">
-                <i class="fa fa-map-marker fa-3x"></i>
-                <h4>Location</h4>
-                <a href="https://www.google.by/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8835622,27.4395527,10z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9045398!4d27.5615244">Minsk, Belarus</a>
+                <i class="contact__icon fa fa-map-marker fa-3x"></i>
+                <h4 class="contact__name">Location</h4>
+                <a class="contact__link" href="https://www.google.by/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8835622,27.4395527,10z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9045398!4d27.5615244">Minsk, Belarus</a>
               </div>
 
             </section>
@@ -322,9 +282,9 @@
             <section class="os-animation" data-os-animation="flip" data-os-animation-delay=".6s">
 
               <div class="contact-container">
-                <i class="fa fa-mobile fa-3x"></i>
-                <h4>Phone</h4>
-                <a href="#">+375 33 610 13 34</a>
+                <i class="contact__icon fa fa-mobile fa-3x"></i>
+                <h4 class="contact__name">Phone</h4>
+                <a class="contact__link" href="#">+375 33 610 13 34</a>
               </div>
 
             </section>
@@ -332,9 +292,9 @@
 
             <section class="os-animation" data-os-animation="fadeInRightBig" data-os-animation-delay=".1s">
               <div class="contact-container">
-                <i class="fa fa-envelope-o fa-3x"></i>
-                <h4>Email</h4>
-                <a href="mailto:ipadbiarezski@gmail.com">ipadbiarezski@gmail.com</a>
+                <i class="contact__icon fa fa-envelope-o fa-3x"></i>
+                <h4 class="contact__name">Email</h4>
+                <a class="contact__link" href="mailto:ipadbiarezski@gmail.com">ipadbiarezski@gmail.com</a>
               </div>
 
             </section>
@@ -351,10 +311,10 @@
   </main>
 
   <!--Start FOOTER -->
-  <footer>
+  <footer class="footer">
     <div class="container content">
-      <a href="index.html"><img class="footer-logo" src="img/logo.png" alt="iPadbiarexski Logo"></a>
-      <p class="copyright">Copyright &copy; 2017 - Ihar Padbiarezski</p>
+      <a class="footer__link" href="index.html"><img class="footer-logo" src="img/logo.png" alt="iPadbiarezski Logo"></a>
+      <p  class="footer__text" class="copyright">Copyright &copy; 2017 - Ihar Padbiarezski</p>
     </div>
   </footer>
   <!-- END FOOTER -->
